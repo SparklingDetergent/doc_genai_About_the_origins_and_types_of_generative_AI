@@ -28,11 +28,26 @@
 
 本資料では、生成AIの成り立ち、種類、従来のAIとの違い、動作仕組み、そしてその有用性について解説し、今後の展望について考察します。
 
-
 ```mermaid
-graph LR
-    A[大量のデータ] --> B{生成AIモデル};
-    B --> C[新しいデータやコンテンツ];
+graph TB
+  AI["人工知能(AI)"]
+  TraditionalAI["従来のAI"]
+  GenAI["生成AI"]
+  AI --> TraditionalAI
+  AI --> GenAI
+  TraditionalAI -->|データ分析や予測| Analysis["データ分析/予測"]
+  GenAI -->|学習したデータに基づく生成| NewData["新しいデータ/コンテンツ"]
+```
+```mermaid
+graph TB
+  GenAI["生成AI"]
+  subgraph "生成AIの特性"
+    GenAI -.->|成り立ち| Origin["成り立ち"]
+    GenAI -.->|種類| Types["種類"]
+    GenAI -.->|動作仕組み| Mechanism["動作仕組み"]
+    GenAI -.->|有用性| Utility["有用性"]
+    GenAI -.->|今後の展望| Future["今後の展望"]
+  end
 ```
 
 <br/><br/>
@@ -43,7 +58,7 @@ graph LR
 
 ```mermaid
 graph LR
-    A[学習データ] --> B(生成AI) --> C[新しいデータ\n新しいコンテンツ];
+    A[学習データ] --> B{生成AI} --> C[新しいデータ\n新しいコンテンツ];
     
 ```
 
@@ -75,9 +90,12 @@ timeline
 
 ```mermaid
 graph LR
-    A[大量のデータ] --> B[機械学習] --> C[学習済みモデル];
+    A[大量のデータ] --> B[機械学習] --> C{生成モデル};
     A --> D[深層学習] --> C;
-    C --> E{生成モデル} --> F[新しいデータ\n新しいコンテンツ];
+```
+```mermaid
+graph LR
+    G[プロンプト（入力）] --> E{生成モデル} --> F[新しいデータ\n新しいコンテンツ];
 ```
 
 <br/><br/>
