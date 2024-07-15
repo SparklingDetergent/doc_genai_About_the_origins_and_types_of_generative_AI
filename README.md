@@ -142,7 +142,7 @@ graph LR
 
 
 ```mermaid
-graph TB
+graph LR
     A[生成AI] --> B[マーケティング]
     A --> C[カスタマーサービス]
     A --> D[教育]
