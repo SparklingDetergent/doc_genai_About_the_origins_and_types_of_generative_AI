@@ -1,0 +1,2 @@
+# doc_genai_About_the_origins_and_types_of_generative_AI
+生成AIの成り立ちや種類について
